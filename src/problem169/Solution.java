@@ -1,7 +1,4 @@
-package Problem_169;
-
-import java.util.HashMap;
-import java.util.Map;
+package problem169;
 
 public class Solution {
     public int majorityElement(int[] nums) {

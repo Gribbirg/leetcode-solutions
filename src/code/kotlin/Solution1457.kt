@@ -1,4 +1,4 @@
-package kotlincode
+package code.kotlin
 
 class TreeNode(var `val`: Int) {
     var left: TreeNode? = null

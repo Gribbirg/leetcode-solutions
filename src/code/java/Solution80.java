@@ -1,4 +1,4 @@
-package javacode;
+package code.java;
 
 public class Solution80 {
     public int removeDuplicates(int[] nums) {

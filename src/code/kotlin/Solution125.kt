@@ -1,4 +1,4 @@
-package kotlincode
+package code.kotlin
 
 class Solution125 {
     fun isPalindrome(s: String): Boolean {

@@ -1,4 +1,4 @@
-package kotlincode
+package code.kotlin
 
 class Solution189 {
     fun rotate(nums: IntArray, k: Int): Unit {

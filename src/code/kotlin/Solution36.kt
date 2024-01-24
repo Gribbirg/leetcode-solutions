@@ -1,4 +1,4 @@
-package kotlincode
+package code.kotlin
 
 class Solution36 {
     fun isValidSudoku(board: Array<CharArray>): Boolean {

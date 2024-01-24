@@ -1,4 +1,4 @@
-package kotlincode
+package code.kotlin
 
 class Solution167 {
     fun twoSum(numbers: IntArray, target: Int): IntArray {

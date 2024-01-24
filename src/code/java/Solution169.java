@@ -1,4 +1,4 @@
-package javacode;
+package code.java;
 
 public class Solution169 {
     public int majorityElement(int[] nums) {

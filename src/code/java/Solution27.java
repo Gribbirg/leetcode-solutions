@@ -1,4 +1,4 @@
-package javacode;
+package code.java;
 
 public class Solution27 {
     public int removeElement(int[] nums, int val) {

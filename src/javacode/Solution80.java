@@ -1,6 +1,6 @@
-package problem80;
+package javacode;
 
-public class Solution {
+public class Solution80 {
     public int removeDuplicates(int[] nums) {
         int j = 0;
         for (int el : nums) {
@@ -12,7 +12,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution80 solution = new Solution80();
         int[] nums = new int[]{1,1,1,2,2,3};
         System.out.println(solution.removeDuplicates(nums));
         for (int el : nums) System.out.println(el);

@@ -1,13 +1,11 @@
-package problem1457
-
-import kotlin.math.max
+package kotlincode
 
 class TreeNode(var `val`: Int) {
     var left: TreeNode? = null
     var right: TreeNode? = null
 }
 
-class Solution {
+class Solution1457 {
     fun pseudoPalindromicPaths (root: TreeNode?): Int {
         if (root == null) return 0
         return pseudoPalindromicPathsFounder(root, HashSet())
@@ -17,11 +15,15 @@ class Solution {
         if (!set.add(node.`val`)) {
             set.remove(node.`val`)
         }
-
-        if (node.left != null && node.right != null) return pseudoPalindromicPathsFounder(node.left!!, set) + pseudoPalindromicPathsFounder(node.right!!, set)
-        if (node.left != null) return pseudoPalindromicPathsFounder(node.left!!, set)
-        if (node.right != null) return pseudoPalindromicPathsFounder(node.right!!, set)
-        return if (set.size <= 1) 1 else 0
+        var ans = 0
+        ans = if (node.left != null && node.right != null) pseudoPalindromicPathsFounder(node.left!!, set) + pseudoPalindromicPathsFounder(node.right!!, set)
+        else if (node.left != null) pseudoPalindromicPathsFounder(node.left!!, set)
+        else if (node.right != null) pseudoPalindromicPathsFounder(node.right!!, set)
+        else if (set.size <= 1) 1 else 0
+        if (!set.add(node.`val`)) {
+            set.remove(node.`val`)
+        }
+        return ans
     }
 }
 
@@ -33,7 +35,7 @@ fun main() {
     ti.right = TreeNode(1)
     ti.right?.right = TreeNode(1)
 
-    val solution = Solution()
+    val solution = Solution1457()
     println(solution.pseudoPalindromicPaths(ti))
 }
 

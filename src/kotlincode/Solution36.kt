@@ -1,6 +1,6 @@
-package problem36
+package kotlincode
 
-class Solution {
+class Solution36 {
     fun isValidSudoku(board: Array<CharArray>): Boolean {
         val set = HashSet<Char>()
         for (i in 0..8) {
@@ -36,7 +36,7 @@ class Solution {
 }
 
 fun main() {
-    val solution = Solution()
+    val solution = Solution36()
     val board = arrayOf(
         charArrayOf('5', '3', '.', '.', '7', '.', '.', '.', '.'),
         charArrayOf('6', '.', '.', '1', '9', '5', '.', '.', '.'),

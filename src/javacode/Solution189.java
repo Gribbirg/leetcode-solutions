@@ -1,6 +1,6 @@
-package problem189;
+package javacode;
 
-public class Solution {
+public class Solution189 {
     public void rotate(int[] nums, int k) {
         int j;
         for (int i = nums.length - 1; i >= 0; i--) {
@@ -11,7 +11,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution189 solution = new Solution189();
         int[] nums = new int[]{1,2,3,4,5,6,7};
         solution.rotate(nums, 3);
         for (int el : nums) System.out.println(el);

@@ -1,6 +1,6 @@
-package problem125
+package kotlincode
 
-class Solution {
+class Solution125 {
     fun isPalindrome(s: String): Boolean {
         if (s.isEmpty() || s.length == 1 && isAlphanumeric(s[0]))
             return true
@@ -33,7 +33,7 @@ class Solution {
 }
 
 fun main() {
-    val solution = Solution()
+    val solution = Solution125()
     println(solution.isPalindrome("A man, a plan, a canal: Panama"))
     println(solution.isPalindrome("race a car"))
 }

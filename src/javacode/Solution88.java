@@ -1,6 +1,6 @@
-package problem88;
+package javacode;
 
-public class Solution {
+public class Solution88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1;
         int j = n - 1;
@@ -15,7 +15,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution88 solution = new Solution88();
         int[] nums1 = new int[] {1, 2, 3, 0, 0, 0};
         int[] nums2 = new int[] {2, 5, 6};
         solution.merge(nums1, 3, nums2, 3);

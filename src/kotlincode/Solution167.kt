@@ -1,6 +1,6 @@
-package problem167
+package kotlincode
 
-class Solution {
+class Solution167 {
     fun twoSum(numbers: IntArray, target: Int): IntArray {
         var left = 0
         var right = numbers.size - 1

@@ -1,10 +1,5 @@
 package code.kotlin
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
-
 class Solution1457 {
     fun pseudoPalindromicPaths (root: TreeNode?): Int {
         if (root == null) return 0

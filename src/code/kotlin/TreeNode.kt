@@ -34,4 +34,24 @@ class TreeNode(var `val`: Int) {
             }
         }
     }
+
+    override fun toString(): String {
+        val queue: Queue<TreeNode?> = LinkedList()
+        queue.add(this)
+
+        var res = "["
+
+        while (queue.isNotEmpty()) {
+            val node = queue.poll()
+
+            res += node?.`val` ?: "null"
+            res += ", "
+
+            node?.left?.let { queue.add(it) }
+            node?.right?.let { queue.add(it) }
+        }
+        res = res.substring(0, res.lastIndex - 1)
+        res += "]"
+        return res
+    }
 }

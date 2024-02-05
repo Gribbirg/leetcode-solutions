@@ -1,6 +1,6 @@
 package code.kotlin
 
-class Solution167 {
+class TwoSumIIInputArrayIsSorted {
     fun twoSum(numbers: IntArray, target: Int): IntArray {
         var left = 0
         var right = numbers.size - 1
@@ -15,4 +15,8 @@ class Solution167 {
         }
         return intArrayOf(left + 1, right + 1)
     }
+}
+
+fun main() {
+
 }

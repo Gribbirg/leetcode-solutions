@@ -1,6 +1,8 @@
 package code.kotlin
 
-class Solution222 {
+import code.kotlin.auxiliary.TreeNode
+
+class CountCompleteTreeNodes {
     fun countNodes(root: TreeNode?): Int =
         when {
             root == null -> 0
@@ -9,7 +11,7 @@ class Solution222 {
 }
 
 fun main() {
-    val sol = Solution222()
+    val sol = CountCompleteTreeNodes()
     val root = TreeNode(1)
     root.left = TreeNode(2)
     root.left?.left = TreeNode(4)

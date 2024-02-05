@@ -1,6 +1,8 @@
 package code.kotlin
 
-class Solution112 {
+import code.kotlin.auxiliary.TreeNode
+
+class PathSum {
     fun hasPathSum(root: TreeNode?, targetSum: Int): Boolean {
         if (root == null)
             return false
@@ -12,7 +14,7 @@ class Solution112 {
 }
 
 fun main() {
-    val sol = Solution112()
+    val sol = PathSum()
     val root = TreeNode(5)
     root.left = TreeNode(4)
     root.left?.left = TreeNode(11)

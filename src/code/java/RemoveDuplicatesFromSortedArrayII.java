@@ -1,6 +1,6 @@
 package code.java;
 
-public class Solution80 {
+public class RemoveDuplicatesFromSortedArrayII {
     public int removeDuplicates(int[] nums) {
         int j = 0;
         for (int el : nums) {
@@ -12,7 +12,7 @@ public class Solution80 {
     }
 
     public static void main(String[] args) {
-        Solution80 solution = new Solution80();
+        RemoveDuplicatesFromSortedArrayII solution = new RemoveDuplicatesFromSortedArrayII();
         int[] nums = new int[]{1,1,1,2,2,3};
         System.out.println(solution.removeDuplicates(nums));
         for (int el : nums) System.out.println(el);

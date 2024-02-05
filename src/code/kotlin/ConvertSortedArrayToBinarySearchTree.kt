@@ -1,6 +1,8 @@
 package code.kotlin
 
-class Solution108 {
+import code.kotlin.auxiliary.TreeNode
+
+class ConvertSortedArrayToBinarySearchTree {
     fun sortedArrayToBST(nums: IntArray, start: Int = 0, end: Int = nums.size - 1): TreeNode? {
         if (start > end)
             return null
@@ -15,7 +17,7 @@ class Solution108 {
 }
 
 fun main() {
-    val sol = Solution108()
+    val sol = ConvertSortedArrayToBinarySearchTree()
     val root = sol.sortedArrayToBST(intArrayOf(-10, -3, 0, 5, 9))
     println(root)
 }

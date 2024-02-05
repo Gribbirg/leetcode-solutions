@@ -1,6 +1,6 @@
 package code.kotlin
 
-class Solution58 {
+class LengthOfLastWord {
     fun lengthOfLastWord(s: String): Int {
         if (s.length <= 1)
             return s.length
@@ -20,6 +20,6 @@ class Solution58 {
 }
 
 fun main() {
-    val solution = Solution58()
+    val solution = LengthOfLastWord()
     println(solution.lengthOfLastWord("   fly me   to   the moon  "))
 }

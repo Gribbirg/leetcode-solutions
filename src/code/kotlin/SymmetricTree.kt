@@ -1,6 +1,8 @@
 package code.kotlin
 
-class Solution101 {
+import code.kotlin.auxiliary.TreeNode
+
+class SymmetricTree {
     fun isSymmetric(root: TreeNode?): Boolean {
 
         fun areNodesSymmetric(nodeLeft: TreeNode?, nodeRight: TreeNode?): Boolean =
@@ -15,7 +17,7 @@ class Solution101 {
 }
 
 fun main() {
-    val sol = Solution101()
+    val sol = SymmetricTree()
     val root = TreeNode(arrayListOf(1,2,3))
     println(sol.isSymmetric(root))
 

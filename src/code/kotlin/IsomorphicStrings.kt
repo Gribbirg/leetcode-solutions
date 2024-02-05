@@ -1,6 +1,6 @@
 package code.kotlin
 
-class Solution205 {
+class IsomorphicStrings {
     fun isIsomorphic(s: String, t: String): Boolean {
         val map = HashMap<Char, Char>()
 
@@ -19,6 +19,6 @@ class Solution205 {
 }
 
 fun main() {
-    val sol = Solution205()
+    val sol = IsomorphicStrings()
     println(sol.isIsomorphic("egg", "adh"))
 }

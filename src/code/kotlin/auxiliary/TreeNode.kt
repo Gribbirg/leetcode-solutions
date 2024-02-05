@@ -1,4 +1,4 @@
-package code.kotlin
+package code.kotlin.auxiliary
 
 import java.util.LinkedList
 import java.util.Queue

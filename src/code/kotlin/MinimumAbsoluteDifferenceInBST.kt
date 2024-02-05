@@ -1,9 +1,10 @@
 package code.kotlin
 
+import code.kotlin.auxiliary.TreeNode
 import kotlin.math.abs
 import kotlin.math.min
 
-class Solution530 {
+class MinimumAbsoluteDifferenceInBST {
     fun getMinimumDifference(root: TreeNode?): Int {
         var prev: Int? = null
         var diff = Int.MAX_VALUE
@@ -25,7 +26,7 @@ class Solution530 {
 }
 
 fun main() {
-    val sol = Solution530()
+    val sol = MinimumAbsoluteDifferenceInBST()
     val root = TreeNode(arrayListOf(236, 104, 701, null, 227, null, 911))
     println(sol.getMinimumDifference(root))
 }

@@ -1,6 +1,6 @@
 package code.kotlin
 
-class Solution290 {
+class WordPattern {
     fun wordPattern(pattern: String, s: String): Boolean {
         val wordsList = s.split(' ')
 
@@ -23,6 +23,6 @@ class Solution290 {
 }
 
 fun main() {
-    val sol = Solution290()
+    val sol = WordPattern()
     println(sol.wordPattern("abba", "dog cat cat fish"))
 }

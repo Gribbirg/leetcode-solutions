@@ -1,6 +1,6 @@
 package code.java;
 
-public class Solution26 {
+public class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {
         int j = 1;
         for (int i = 1; i < nums.length; i++) {
@@ -13,7 +13,7 @@ public class Solution26 {
     }
 
     public static void main(String[] args) {
-        Solution26 solution26 = new Solution26();
+        RemoveDuplicatesFromSortedArray solution26 = new RemoveDuplicatesFromSortedArray();
         int[] nums = new int[]{0,0,1,1,1,2,2,3,3,4};
         System.out.println(solution26.removeDuplicates(nums));
         for (int el : nums) System.out.println(el);

@@ -1,8 +1,9 @@
 package code.kotlin
 
+import code.kotlin.auxiliary.TreeNode
 import kotlin.math.max
 
-class Solution104 {
+class MaximumDepthOfBinaryTree {
     fun maxDepth(root: TreeNode?): Int =
         if (root == null)
             0
@@ -11,7 +12,7 @@ class Solution104 {
 }
 
 fun main() {
-    val sol = Solution104()
+    val sol = MaximumDepthOfBinaryTree()
     val root = TreeNode(3)
     root.left = TreeNode(9)
     root.right = TreeNode(20)

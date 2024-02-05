@@ -1,6 +1,8 @@
 package code.kotlin
 
-class Solution100 {
+import code.kotlin.auxiliary.TreeNode
+
+class SameTree {
     fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean =
         if (p == null || q == null)
             p == q
@@ -9,7 +11,7 @@ class Solution100 {
 }
 
 fun main() {
-    val solution = Solution100()
+    val solution = SameTree()
 
     val p = TreeNode(1)
 //    p.left = TreeNode(2)

@@ -1,6 +1,8 @@
 package code.kotlin
 
-class Solution1457 {
+import code.kotlin.auxiliary.TreeNode
+
+class PseudoPalindromicPathsInBinaryTree {
     fun pseudoPalindromicPaths (root: TreeNode?): Int {
         if (root == null) return 0
         return pseudoPalindromicPathsFounder(root, HashSet())
@@ -30,7 +32,7 @@ fun main() {
     ti.right = TreeNode(1)
     ti.right?.right = TreeNode(1)
 
-    val solution = Solution1457()
+    val solution = PseudoPalindromicPathsInBinaryTree()
     println(solution.pseudoPalindromicPaths(ti))
 }
 

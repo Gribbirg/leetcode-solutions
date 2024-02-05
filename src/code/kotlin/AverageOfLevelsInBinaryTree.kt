@@ -1,9 +1,10 @@
 package code.kotlin
 
+import code.kotlin.auxiliary.TreeNode
 import java.util.LinkedList
 import java.util.Queue
 
-class Solution637 {
+class AverageOfLevelsInBinaryTree {
     fun averageOfLevels(root: TreeNode?): DoubleArray {
         val res = ArrayList<Double>()
 
@@ -32,7 +33,7 @@ class Solution637 {
 }
 
 fun main() {
-    val sol = Solution637()
+    val sol = AverageOfLevelsInBinaryTree()
     val root = TreeNode(arrayListOf(2147483647,2147483647,2147483647))
     println(sol.averageOfLevels(root).toList())
 }

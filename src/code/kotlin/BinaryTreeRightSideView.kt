@@ -1,9 +1,10 @@
 package code.kotlin
 
+import code.kotlin.auxiliary.TreeNode
 import java.util.LinkedList
 import java.util.Queue
 
-class Solution199 {
+class BinaryTreeRightSideView {
     fun rightSideView(root: TreeNode?): List<Int> {
         val list = ArrayList<Int>()
 
@@ -28,7 +29,7 @@ class Solution199 {
 }
 
 fun main() {
-    val sol = Solution199()
+    val sol = BinaryTreeRightSideView()
     val root = TreeNode(1)
     root.left = TreeNode(2)
     root.left?.right = TreeNode(5)

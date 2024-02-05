@@ -1,6 +1,6 @@
 package code.kotlin
 
-class Solution383 {
+class RansomNote {
     fun canConstruct(ransomNote: String, magazine: String): Boolean {
         val magazineMap = HashMap<Char, Int>()
 
@@ -19,6 +19,6 @@ class Solution383 {
 }
 
 fun main() {
-    val solution = Solution383()
+    val solution = RansomNote()
     println(solution.canConstruct("aa", "aabb"))
 }

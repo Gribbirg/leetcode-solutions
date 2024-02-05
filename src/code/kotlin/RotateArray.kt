@@ -1,6 +1,6 @@
 package code.kotlin
 
-class Solution189 {
+class RotateArray {
     fun rotate(nums: IntArray, k: Int): Unit {
         val point = k % nums.size
         with(nums) {
@@ -13,7 +13,7 @@ class Solution189 {
 
 fun main() {
     val nums = intArrayOf(1,2,3,4,5,6,7)
-    val solution = Solution189()
+    val solution = RotateArray()
     solution.rotate(nums, 3)
     nums.forEach { println(it) }
 }

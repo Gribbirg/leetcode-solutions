@@ -1,6 +1,6 @@
 package code.kotlin
 
-import code.kotlin.auxiliary.TreeNode
+import code.kotlin.structures.TreeNode
 import kotlin.math.abs
 import kotlin.math.min
 

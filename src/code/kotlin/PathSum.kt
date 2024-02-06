@@ -1,6 +1,6 @@
 package code.kotlin
 
-import code.kotlin.auxiliary.TreeNode
+import code.kotlin.structures.TreeNode
 
 class PathSum {
     fun hasPathSum(root: TreeNode?, targetSum: Int): Boolean {

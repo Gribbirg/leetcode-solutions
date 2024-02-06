@@ -1,6 +1,6 @@
 package code.kotlin
 
-import code.kotlin.auxiliary.TreeNode
+import code.kotlin.structures.TreeNode
 
 class ConvertSortedArrayToBinarySearchTree {
     fun sortedArrayToBST(nums: IntArray, start: Int = 0, end: Int = nums.size - 1): TreeNode? {

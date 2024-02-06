@@ -1,6 +1,6 @@
 package code.kotlin
 
-import code.kotlin.auxiliary.TreeNode
+import code.kotlin.structures.TreeNode
 
 class CountCompleteTreeNodes {
     fun countNodes(root: TreeNode?): Int =

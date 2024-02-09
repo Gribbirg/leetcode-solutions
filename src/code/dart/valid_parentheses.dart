@@ -1,6 +1,6 @@
 import 'dart:collection';
 
-class ValidParentheses {
+class Solution {
   bool isValid(String s) {
     final HashMap<String, String> bracketsMap = HashMap();
     bracketsMap.addAll({
@@ -23,7 +23,7 @@ class ValidParentheses {
 }
 
 main() {
-  print(ValidParentheses().isValid("()"));
-  print(ValidParentheses().isValid("()[]{}"));
-  print(ValidParentheses().isValid("(]"));
+  print(Solution().isValid("()"));
+  print(Solution().isValid("()[]{}"));
+  print(Solution().isValid("(]"));
 }

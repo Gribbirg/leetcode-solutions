@@ -1,6 +1,6 @@
 import 'structures/ListNode.dart';
 
-class AddTwoNumbers {
+class Solution {
   ListNode? addTwoNumbers(ListNode? l1, ListNode? l2, [bool add = false]) {
     if (l1 == null && l2 == null && !add) {
       return null;
@@ -12,15 +12,15 @@ class AddTwoNumbers {
 }
 
 main() {
-  print(AddTwoNumbers().addTwoNumbers(ListNode(2, ListNode(4, ListNode(3))),
+  print(Solution().addTwoNumbers(ListNode(2, ListNode(4, ListNode(3))),
       ListNode(5, ListNode(6, ListNode(4)))));
-  print(AddTwoNumbers().addTwoNumbers(ListNode(0), ListNode(0)));
-  print(AddTwoNumbers().addTwoNumbers(
+  print(Solution().addTwoNumbers(ListNode(0), ListNode(0)));
+  print(Solution().addTwoNumbers(
       ListNode(
           9,
           ListNode(9,
               ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9))))))),
       ListNode(9, ListNode(9, ListNode(9, ListNode(9))))));
-  print(AddTwoNumbers().addTwoNumbers(ListNode(1, ListNode(2, ListNode(4))),
+  print(Solution().addTwoNumbers(ListNode(1, ListNode(2, ListNode(4))),
       ListNode(1, ListNode(3, ListNode(4)))));
 }

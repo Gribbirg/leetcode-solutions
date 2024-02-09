@@ -1,4 +1,4 @@
-class RomanToInteger {
+class Solution {
   static const romanMap = {
     "I": 1,
     "V": 5,
@@ -25,7 +25,7 @@ class RomanToInteger {
 }
 
 void main() {
-  var sol = RomanToInteger();
+  var sol = Solution();
   print(sol.romanToInt("III"));
   print(sol.romanToInt("LVIII"));
   print(sol.romanToInt("MCMXCIV"));

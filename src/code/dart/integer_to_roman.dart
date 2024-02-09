@@ -1,4 +1,4 @@
-class IntegerToRoman {
+class Solution {
   static const romanMap = {
     1000: "M",
     900: "CM",
@@ -27,7 +27,7 @@ class IntegerToRoman {
 }
 
 void main() {
-  var sol = IntegerToRoman();
+  var sol = Solution();
   print(sol.intToRoman(3));
   print(sol.intToRoman(58));
   print(sol.intToRoman(1994));

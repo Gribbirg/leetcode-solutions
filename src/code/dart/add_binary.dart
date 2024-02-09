@@ -1,4 +1,4 @@
-class AddBinary {
+class Solution {
   String addBinary(String a, String b) {
     var res = "";
     var aI = a.length - 1;
@@ -61,7 +61,7 @@ class AddBinary {
 }
 
 void main() {
-  var sol = AddBinary();
+  var sol = Solution();
   print(sol.addBinary("11", "1"));
   print(sol.addBinary("1010", "1011"));
   print(sol.addBinary("11", "0"));

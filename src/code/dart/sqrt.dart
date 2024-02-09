@@ -1,4 +1,4 @@
-class Sqrt {
+class Solution {
   int mySqrt(int x) {
     return binaryFindSqrt(0, x ~/ 2 + 1, x);
   }
@@ -14,7 +14,7 @@ class Sqrt {
 }
 
 main() {
-  var sol = Sqrt();
+  var sol = Solution();
   print(sol.mySqrt(4));
   print(sol.mySqrt(16));
   print(sol.mySqrt(8));

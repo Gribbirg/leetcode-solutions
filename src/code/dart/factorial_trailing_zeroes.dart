@@ -1,4 +1,4 @@
-class FactorialTrailingZeroes {
+class Solution {
   int trailingZeroes(int n) {
     var res = 0;
     for (var div = 5; div <= n; div *= 5) {
@@ -9,7 +9,7 @@ class FactorialTrailingZeroes {
 }
 
 main() {
-  var sol = FactorialTrailingZeroes();
+  var sol = Solution();
   print(sol.trailingZeroes(3));
   print(sol.trailingZeroes(5));
   print(sol.trailingZeroes(0));

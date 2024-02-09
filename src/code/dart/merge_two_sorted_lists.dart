@@ -1,6 +1,6 @@
 import 'structures/ListNode.dart';
 
-class MergeTwoSortedLists {
+class Solution {
   ListNode? mergeTwoLists(ListNode? list1, ListNode? list2) {
     if (list1 == null) return list2;
     if (list2 == null) return list1;
@@ -39,12 +39,12 @@ class MergeTwoSortedLists {
 }
 
 main() {
-  print(MergeTwoSortedLists().mergeTwoLists(
+  print(Solution().mergeTwoLists(
       ListNode(1, ListNode(2, ListNode(4))),
       ListNode(1, ListNode(3, ListNode(4)))));
-  print(MergeTwoSortedLists().mergeTwoLists(
+  print(Solution().mergeTwoLists(
       ListNode(1, ListNode(2, ListNode(4))),
       ListNode(1, ListNode(8, ListNode(9)))));
-  print(MergeTwoSortedLists().mergeTwoLists(null, null));
-  print(MergeTwoSortedLists().mergeTwoLists(null, ListNode(0)));
+  print(Solution().mergeTwoLists(null, null));
+  print(Solution().mergeTwoLists(null, ListNode(0)));
 }

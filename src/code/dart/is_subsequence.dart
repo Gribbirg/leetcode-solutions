@@ -1,4 +1,4 @@
-class IsSubsequence {
+class Solution {
   bool isSubsequence(String s, String t) {
     var j = 0;
     for (var i = 0; i < s.length; i++) {
@@ -11,7 +11,7 @@ class IsSubsequence {
 }
 
 main() {
-  var sol = IsSubsequence();
+  var sol = Solution();
   print(sol.isSubsequence("abc", "ahbgdc"));
   print(sol.isSubsequence("axc", "ahbgdc"));
   print(sol.isSubsequence("", ""));

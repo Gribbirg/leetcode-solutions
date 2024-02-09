@@ -1,4 +1,4 @@
-class LargestDivisibleSubset {
+class Solution {
   List<int> largestDivisibleSubset(List<int> nums) {
     nums.sort();
 
@@ -28,7 +28,7 @@ class LargestDivisibleSubset {
 }
 
 void main() {
-  var sol = LargestDivisibleSubset();
+  var sol = Solution();
   print(sol.largestDivisibleSubset([1, 2, 3]));
   print(sol.largestDivisibleSubset([1, 2, 4, 8]));
 }

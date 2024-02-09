@@ -1,4 +1,4 @@
-class SummaryRanges {
+class Solution {
   List<String> summaryRanges(List<int> nums) {
     List<String> res = [];
     if (nums.isEmpty) return res;
@@ -20,7 +20,7 @@ class SummaryRanges {
 }
 
 main() {
-  var sol = SummaryRanges();
+  var sol = Solution();
   print(sol.summaryRanges([0,1,2,4,5,7]));
   print(sol.summaryRanges([0,2,3,4,6,8,9]));
 }

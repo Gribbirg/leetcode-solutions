@@ -1,4 +1,4 @@
-class SearchInsertPosition {
+class Solution {
   int searchInsert(List<int> nums, int target) =>
       binarySearch(nums, 0, nums.length, target);
 
@@ -17,7 +17,7 @@ class SearchInsertPosition {
 }
 
 main() {
-  var sol = SearchInsertPosition();
+  var sol = Solution();
   print(sol.searchInsert([1, 3, 5, 6], 5));
   print(sol.searchInsert([1, 3, 5, 6], 2));
   print(sol.searchInsert([1, 3, 5, 6], 7));

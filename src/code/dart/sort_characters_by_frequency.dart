@@ -1,6 +1,6 @@
 import 'dart:collection';
 
-class SortCharactersByFrequency {
+class Solution {
   String frequencySort(String s) {
     var map = HashMap<String, int>();
     for (var char in s.split('')) {
@@ -19,7 +19,7 @@ class SortCharactersByFrequency {
 }
 
 main() {
-  var sol = SortCharactersByFrequency();
+  var sol = Solution();
   print(sol.frequencySort("tree"));
   print(sol.frequencySort("cccaaa"));
   print(sol.frequencySort("Aabb"));

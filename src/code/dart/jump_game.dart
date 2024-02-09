@@ -1,6 +1,6 @@
 import 'dart:math';
 
-class JumpGame {
+class Solution {
   bool canJump(List<int> nums) {
     var reach = 0;
     for (int i = 0; i < nums.length; i++) {
@@ -12,7 +12,7 @@ class JumpGame {
 }
 
 void main() {
-  var sol = JumpGame();
+  var sol = Solution();
   print(sol.canJump([2, 3, 1, 1, 4]));
   print(sol.canJump([3, 2, 1, 0, 4]));
 }

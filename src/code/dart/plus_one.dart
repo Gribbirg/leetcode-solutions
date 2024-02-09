@@ -1,4 +1,4 @@
-class PlusOne {
+class Solution {
   List<int> plusOne(List<int> digits) {
     int sum;
     var i = digits.length - 1;
@@ -13,7 +13,7 @@ class PlusOne {
 }
 
 main() {
-  var sol = PlusOne();
+  var sol = Solution();
   print(sol.plusOne([1, 2, 3]));
   print(sol.plusOne([4, 3, 2, 1]));
   print(sol.plusOne([9]));

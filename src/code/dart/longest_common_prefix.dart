@@ -1,4 +1,4 @@
-class LongestCommonPrefix {
+class Solution {
   String longestCommonPrefix(List<String> strs) {
     var prefix = strs[0];
     for (int i = 1; i < strs.length; i++) {
@@ -12,7 +12,7 @@ class LongestCommonPrefix {
 }
 
 void main() {
-  var sol = LongestCommonPrefix();
+  var sol = Solution();
   print(sol.longestCommonPrefix(["flower", "flow", "flight"]));
   print(sol.longestCommonPrefix(["dog", "racecar", "car"]));
 }

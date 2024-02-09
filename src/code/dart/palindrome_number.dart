@@ -1,4 +1,4 @@
-class PalindromeNumber {
+class Solution {
   bool isPalindrome(int x) {
     if (x < 0) return false;
     int n = x;
@@ -12,7 +12,7 @@ class PalindromeNumber {
 }
 
 main() {
-  var sol = PalindromeNumber();
+  var sol = Solution();
   print(sol.isPalindrome(121));
   print(sol.isPalindrome(-121));
   print(sol.isPalindrome(10));

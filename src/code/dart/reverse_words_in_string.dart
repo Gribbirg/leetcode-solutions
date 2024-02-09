@@ -1,4 +1,4 @@
-class ReverseWordsInString {
+class Solution {
   String reverseWords(String s) =>
       (s.split(' ')..removeWhere((element) => element.isEmpty))
           .reversed
@@ -6,7 +6,7 @@ class ReverseWordsInString {
 }
 
 void main() {
-  var sol = ReverseWordsInString();
+  var sol = Solution();
   print(sol.reverseWords("the sky is blue"));
   print(sol.reverseWords("  hello world  "));
   print(sol.reverseWords("a good   example"));

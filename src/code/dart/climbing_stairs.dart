@@ -1,6 +1,6 @@
 import 'dart:collection';
 
-class ClimbingStairs {
+class Solution {
   HashMap<int, int> variants = HashMap();
 
   int climbStairs(int n) {
@@ -15,10 +15,10 @@ class ClimbingStairs {
 }
 
 main() {
-  print(ClimbingStairs().climbStairs(2));
-  print(ClimbingStairs().climbStairs(3));
-  print(ClimbingStairs().climbStairs(4));
-  print(ClimbingStairs().climbStairs(5));
-  print(ClimbingStairs().climbStairs(44));
-  print(ClimbingStairs().climbStairs(1));
+  print(Solution().climbStairs(2));
+  print(Solution().climbStairs(3));
+  print(Solution().climbStairs(4));
+  print(Solution().climbStairs(5));
+  print(Solution().climbStairs(44));
+  print(Solution().climbStairs(1));
 }

@@ -1,6 +1,6 @@
 import 'dart:math';
 
-class PerfectSquares {
+class Solution {
   int numSquares(int n) {
     List<int> dp = List<int>.filled(n + 1, 100000);
     dp[0] = 0;
@@ -14,7 +14,7 @@ class PerfectSquares {
 }
 
 main() {
-  var sol = PerfectSquares();
+  var sol = Solution();
   print(sol.numSquares(12));
   print(sol.numSquares(13));
 }

@@ -12,8 +12,7 @@ class PseudoPalindromicPathsInBinaryTree {
         if (!set.add(node.`val`)) {
             set.remove(node.`val`)
         }
-        var ans = 0
-        ans = if (node.left != null && node.right != null) pseudoPalindromicPathsFounder(node.left!!, set) + pseudoPalindromicPathsFounder(node.right!!, set)
+        val ans = if (node.left != null && node.right != null) pseudoPalindromicPathsFounder(node.left!!, set) + pseudoPalindromicPathsFounder(node.right!!, set)
         else if (node.left != null) pseudoPalindromicPathsFounder(node.left!!, set)
         else if (node.right != null) pseudoPalindromicPathsFounder(node.right!!, set)
         else if (set.size <= 1) 1 else 0

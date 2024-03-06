@@ -10,6 +10,10 @@ class ListNode(var `val`: Int) {
 
     constructor(list: List<Int>) : this(ArrayList(list))
 
+    constructor(`val`: Int, next: ListNode): this(`val`) {
+        this.next = next
+    }
+
     override fun toString(): String {
         return `val`.toString() + if (next != null) ", ${next.toString()}" else ""
     }

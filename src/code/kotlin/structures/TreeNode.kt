@@ -1,7 +1,7 @@
 package code.kotlin.structures
 
-import java.util.LinkedList
-import java.util.Queue
+import java.util.*
+import kotlin.collections.ArrayList
 
 class TreeNode(var `val`: Int) {
     var left: TreeNode? = null
@@ -34,6 +34,8 @@ class TreeNode(var `val`: Int) {
             }
         }
     }
+
+    constructor(list: List<Int?>) : this(ArrayList(list))
 
     override fun toString(): String {
         val queue: Queue<TreeNode?> = LinkedList()

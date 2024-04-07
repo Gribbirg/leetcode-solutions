@@ -23,4 +23,5 @@ fun main() {
     println(sol.addStrings("11", "123"))
     println(sol.addStrings("456", "77"))
     println(sol.addStrings("0", "0"))
+    println(sol.addStrings("1", "1"))
 }

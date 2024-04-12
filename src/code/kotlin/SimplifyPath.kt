@@ -1,7 +1,5 @@
 package code.kotlin
 
-import java.util.*
-
 class SimplifyPath {
     fun simplifyPath(path: String): String {
         val list = mutableListOf<String>()

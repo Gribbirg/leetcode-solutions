@@ -1,12 +1,14 @@
 package code.kotlin
 
-import java.util.Stack
+import java.util.*
+import kotlin.collections.ArrayDeque
+import kotlin.collections.ArrayList
 
 // You should not implement it, or speculate about its implementation
 // This is the interface that allows for creating nested lists.
 class NestedInteger {
-    var num: Int? = null
-    val list: MutableList<NestedInteger>
+    private var num: Int? = null
+    private val list: MutableList<NestedInteger>
 
     // Constructor initializes an empty nested list.
     constructor() {
@@ -19,9 +21,8 @@ class NestedInteger {
         list = mutableListOf()
     }
 
-    constructor(list: List<NestedInteger>) {
-        num = null
-        this.list = list.toMutableList()
+    constructor(enterList: List<NestedInteger>) {
+        list = enterList.toMutableList()
     }
 
     // @return true if this NestedInteger holds a single integer, rather than a nested list.
@@ -48,23 +49,31 @@ class NestedInteger {
     // @return the nested list that this NestedInteger holds, if it holds a nested list
     // Return null if this NestedInteger holds a single integer
     fun getList(): List<NestedInteger>? =
-        if (list.isEmpty()) null else list
+        list
 }
 
 
-class NestedIterator(val nestedList: List<NestedInteger>) {
-    val iterators = Stack<Iterator<NestedInteger>>()
+class NestedIterator(nestedList: List<NestedInteger>) {
+
+    private val queue: Queue<Int> = LinkedList()
 
     init {
-        iterators.add(nestedList.iterator())
+        fillStack(nestedList)
     }
 
-    fun next(): Int {
-
+    private fun fillStack(nestedList: List<NestedInteger>) {
+        nestedList.forEach { nestedInteger ->
+            if (nestedInteger.isInteger()) {
+                queue.add(nestedInteger.getInteger()!!)
+            } else {
+                fillStack(nestedInteger.getList()!!)
+            }
+        }
     }
 
-    fun hasNext(): Boolean =
+    fun next(): Int = queue.poll()
 
+    fun hasNext(): Boolean = queue.isNotEmpty()
 }
 
 /**
@@ -75,26 +84,60 @@ class NestedIterator(val nestedList: List<NestedInteger>) {
  */
 
 fun main() {
-    val obj = NestedInteger(
-        listOf(
-            NestedInteger(
-                listOf(
-                    NestedInteger(1),
-                    NestedInteger(1)
-                )
-            ),
-            NestedInteger(2),
-            NestedInteger(
-                listOf(
-                    NestedInteger(1),
-                    NestedInteger(1)
+    printNested(
+        NestedInteger(
+            listOf(
+                NestedInteger(
+                    listOf(
+                        NestedInteger(1),
+                        NestedInteger(1)
+                    )
+                ),
+                NestedInteger(2),
+                NestedInteger(
+                    listOf(
+                        NestedInteger(1),
+                        NestedInteger(1)
+                    )
                 )
             )
         )
     )
+
+    printNested(
+        NestedInteger(
+            listOf(
+                NestedInteger(1),
+                NestedInteger(
+                    listOf(
+                        NestedInteger(4),
+                        NestedInteger(
+                            listOf(
+                                NestedInteger(6)
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    )
+
+    printNested(
+        NestedInteger(
+            listOf(
+                NestedInteger(
+                    listOf()
+                )
+            )
+        )
+    )
+}
+
+fun printNested(obj: NestedInteger) {
     val iter = NestedIterator(nestedList = obj.getList()!!)
 
     while (iter.hasNext()) {
         println(iter.next())
     }
+    println()
 }

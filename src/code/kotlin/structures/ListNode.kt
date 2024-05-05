@@ -8,7 +8,9 @@ class ListNode(var `val`: Int) {
             next = ListNode(list.subList(1, list.size))
     }
 
-    constructor(list: List<Int>) : this(ArrayList(list))
+    constructor(list: Collection<Int>) : this(ArrayList(list))
+
+    constructor(array: IntArray) : this(array.toList())
 
     constructor(`val`: Int, next: ListNode): this(`val`) {
         this.next = next

@@ -1,19 +1,19 @@
-# My LeetCode solutions
+# Мои решения LeetCode
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![ru](https://img.shields.io/badge/lang-ru-red.svg)](README.ru.md)
 
-My solutions to [LeetCode](https://leetcode.com/problemset/) problems.
+Мои решения задач с [LeetCode](https://leetcode.com/problemset/)
 
-## Profile
+## Профиль
 
-[Click here](https://leetcode.com/Gribbirg/)
+[Кликните](https://leetcode.com/Gribbirg/)
 
-## Stats
+## Статистика
 
 ![](https://leetcard.jacoblin.cool/gribbirg?ext=heatmap)
 
-## Languages
+## Языки программирования
 
 - [Kotlin](https://github.com/Gribbirg/leetcode-solutions/tree/master/src/code/kotlin)
 - [Java](https://github.com/Gribbirg/leetcode-solutions/tree/master/src/code/java)
